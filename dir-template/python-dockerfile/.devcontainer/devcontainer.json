@@ -1,0 +1,18 @@
+
+// ポータビリティのために postCreateCommandによるpip3 installをしない
+
+{
+    "name": "Python 3 Dockerfile",
+
+    // Dockerfile
+    "build": {
+        "dockerfile": "../Dockerfile"
+    },
+
+    // Common Settings
+    "remoteUser": "dev-user",
+	"workspaceFolder": "/home/dev-user/workspace",
+    "extensions": [
+		"ms-python.python",
+	],
+}

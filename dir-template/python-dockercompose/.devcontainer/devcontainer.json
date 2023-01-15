@@ -1,0 +1,20 @@
+
+// ポータビリティのために postCreateCommandによるpip3 installをしない
+
+{
+    "name": "Python 3 DockerCompose",
+
+    // Docker Compose
+    "dockerComposeFile": [
+        "../docker-compose.yml"
+    ],
+    "service": "workspace",
+    "shutdownAction": "stopCompose",
+
+    // Common Settings
+    "remoteUser": "dev-user",
+	"workspaceFolder": "/home/dev-user/workspace",
+    "extensions": [
+		"ms-python.python",
+	],
+}

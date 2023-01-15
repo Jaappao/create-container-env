@@ -1,0 +1,10 @@
+# Created by jaappao
+
+version: '3'
+
+services:
+  workspace:
+    build: .
+    command: sleep infinity
+    volumes:
+      - .:/home/dev-user/workspace:cached
