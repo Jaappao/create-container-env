@@ -15,4 +15,7 @@
     "extensions": [
 		"ms-python.python",
 	],
+    "mounts": [
+        "source=${localWorkspaceFolder},target=/home/dev-user/workspace,type=bind,consistency=cached"
+    ]
 }

@@ -10,10 +10,10 @@ RUN adduser dev-user && chown -R dev-user /home/dev-user
 USER dev-user
 
 RUN mkdir -p /home/dev-user/workspace
-WORKDIR /home/dev-user/workspace
+WORKDIR /home/dev-user/
 
 # Python Settings
-ADD requirements.txt /home/dev-user/workspace
+ADD requirements.txt /home/dev-user/
 RUN python -m pip install --upgrade pip
 RUN pip install -r requirements.txt
 
